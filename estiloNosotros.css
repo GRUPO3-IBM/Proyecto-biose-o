@@ -1,0 +1,80 @@
+body{
+    box-sizing: border-box;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+/*----cuerpo-----*/
+.integrantes{
+  width: 80%;
+  margin:auto;
+  margin-top: 120px;
+  margin-bottom: 70px;
+  transition: all ease 0.3s;
+} 
+.integrantes h3{
+  font-family: 'Cookie', sans-serif;
+  font-size:35px;
+  font-weight: 600;
+  color: #400A00;
+}
+.integrantes h4{
+  font-family: 'Nunito Sans', sans-serif;
+  font-size:20px;
+  color: #400A00;
+  padding-bottom: 20px;
+}
+.integrantes p{
+  font-family: 'Nunito Sans', sans-serif;
+  font-size:18px;
+}
+.person{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: auto;
+  margin:50px 0px;
+  background: rgba(247, 221, 149, 0.959);
+}
+.person img{
+  width: 100%;
+  border-radius: 50%;
+  padding:10px;
+}
+.foto{
+  width: 30%;
+  margin:auto;
+  min-width: 200px;
+}
+.description{
+  width: 60%;
+  min-width: 500px;
+  align-items: center;
+  margin: auto;
+  padding-bottom: 15px;
+  padding-top: 10px;
+}
+@media only screen and (max-width:900px){
+  .integrantes h3, .integrantes h4, p{
+    text-align: center;
+  }
+}
+@media only screen and (max-width:650px){
+  .description{
+    width: 80%;
+    min-width: 200px;
+  }
+}
+@media only screen and (max-width:470px){
+  .integrantes h3{
+    font-size:25px;
+  }
+  .integrantes h4{
+    font-size:14px;
+  }
+  .integrantes p{
+    font-size:14px;
+  }
+}

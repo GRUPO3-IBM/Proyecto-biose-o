@@ -4,7 +4,7 @@
 		<meta charset =utf-8>
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 		<link rel="icon" href="Logo.ico">
-    <link rel="stylesheet" href="estiloIndex.css">
+    <link rel="stylesheet" href="estiloEntregableAll.css">
     <link rel="stylesheet" href="estilosmenu.css">
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
@@ -25,7 +25,7 @@
       </script>
 		<title>PROYECTO IBM</title>
 	</head>
-  
+
     <body>
       <header>
   <nav class="all">
@@ -35,9 +35,9 @@
     <div class="enlaces">
       <i class="fas fa-bars fa-2x" id="abrir"></i>
       <nav class="menu">
-        <li><a href="index.html" class="active" id="index">INICIO</a></li>
+        <li><a href="index.html" class="item1" id="index">INICIO</a></li>
         <li><a href="nosotros.html" class="item1" id="nosotros">NOSOTROS</a></li>
-        <li><a href="entregables.html" class="item1" id="entregables">ENTREGABLES</a></li>
+        <li><a href="entregables.html" class="active" id="entregables">ENTREGABLES</a></li>
         <li><a href="bibliografia.html" class="item1" id="bibliografia">BIBLIOGRAFÍA</a></li>
       </nav>
     </div>
@@ -49,68 +49,15 @@
     <a href="nosotros.html" class="item" id="nosotros">NOSOTROS</a>
     <a href="entregables.html" class="item" id="entregables">ENTREGABLES</a>
     <a href="bibliografia.html" class="item" id="bibliografia">BIBLIOGRAFÍA</a>
+</div>
+
+<article class="content">
+  <h1>ENTREGABLE 10</h1>
+  <div class="botones">
+    <a href="entregable9.html" class="button-back">ENTREGABLE 9</a>
+    <a href="entregable11.html" class="button-next">ENTREGABLE 11</a>  
   </div>
-
-    <div class="slideshow-container">
-			
-      <div class="Slides-transition">
-       <img src="Diapo1.png">
-      </div>
-      <div class="Slides-transition">
-      <img src="Diapo2.png">
-      </div>
-      <div class="Slides-transition">
-       <img src="Diapo3.png">
-      </div>
-
-      <a class="prev" onclick="plusSlides(-1)">&#10096;</a>
-      <a class="next" onclick="plusSlides(1)">&#10097;</a>
-    </div>
-
-    <div style="text-align:center">
-      <span class="dot" onclick="currentSlide(1)"></span> 
-      <span class="dot" onclick="currentSlide(2)"></span> 
-      <span class="dot" onclick="currentSlide(3)"></span> 
-   </div>
-
-   <script>
-		var slideIndex = 1;
-		showSlides(slideIndex);
-		function plusSlides(n) {
-		  showSlides(slideIndex += n);
-		}
-		function currentSlide(n) {
-  		showSlides(slideIndex = n);
-		}
-		function showSlides(n) {
-  		var i;
-		  var slides = document.getElementsByClassName("Slides-transition");
-		  var dots = document.getElementsByClassName("dot");
-		  if (n > slides.length) {slideIndex = 1}    
-		  if (n < 1) {slideIndex = slides.length}
-		  for (i = 0; i < slides.length; i++) {
-      		slides[i].style.display = "none";  
-  		}
-  	
-		  for (i = 0; i < dots.length; i++) {
-	      	dots[i].className = dots[i].className.replace("active", "");
-  		}
-  	
-		slides[slideIndex-1].style.display = "block";  
-	  	dots[slideIndex-1].className += " active";
-		}
-		</script>
-
-<article class="contenido">
-  <div class="parte1">
-    <div class="texto">
-      <h1>Recién nacidos prematuros</h1>
-      <p>Texto here</p>
-    </div>
-    <div class="multimedia">
-      <img src="Logo.png">
-    </div>
-  </div>
+  
 </article>
 <footer>
   <div class="copyright">
