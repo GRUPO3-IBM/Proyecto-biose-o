@@ -114,9 +114,10 @@ article{
   width: 80%;
   height: 350px;
   margin:auto;
+  margin-bottom:50px;
 } 
 article h1{
-  font-size: 40px;
+  font-size: 35px;
   padding: 15px 0px;
 }
 article p{
@@ -130,13 +131,21 @@ article p{
 }
 .parte1 .texto{
   width:70%;
-  min-width:700px;
+  min-width:400px;
 }
 .parte1 .multimedia{
   width:30%;
-  min-width: 300px;
+  min-width: 200px;
 }
 article img{
-  width: 80%;
+  width: 100%;
   margin:30px;
+}
+@media only screen and (max-width: 700px){
+  article h1{
+    font-size: 20px;
+  }
+  article p{
+    font-size:15px;
+  }
 }
