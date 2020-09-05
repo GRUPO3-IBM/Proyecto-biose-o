@@ -30,6 +30,7 @@ a{
 
 .botones{
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
 }
 .botones a{
