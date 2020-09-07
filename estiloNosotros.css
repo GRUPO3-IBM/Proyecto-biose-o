@@ -9,8 +9,8 @@ body{
 .integrantes{
   width: 80%;
   margin:auto;
-  margin-top: 120px;
-  margin-bottom: 70px;
+  margin-top: 110px;
+  margin-bottom: 60px;
   transition: all ease 0.3s;
 } 
 .integrantes h3{
@@ -25,7 +25,7 @@ body{
   color: #400A00;
   padding-bottom: 20px;
 }
-.integrantes p{
+.integrantes p, .asesores p{
   font-family: 'Nunito Sans', sans-serif;
   font-size:18px;
 }
@@ -35,20 +35,20 @@ body{
   flex-wrap: wrap;
   justify-content: space-around;
   margin: auto;
-  margin:50px 0px;
+  margin: 30px 0px 50px 0px;
   background: rgba(247, 221, 149, 0.959);
 }
-.person img{
+.person img, .asesores img{
   width: 100%;
   border-radius: 50%;
   padding:10px;
 }
-.foto{
+.person .foto{
   width: 30%;
   margin:auto;
   min-width: 200px;
 }
-.description{
+.person .description{
   width: 60%;
   min-width: 500px;
   align-items: center;
@@ -56,9 +56,62 @@ body{
   padding-bottom: 15px;
   padding-top: 10px;
 }
+.only{
+  font-family: 'Nunito Sans', sans-serif;
+  font-size:25px;
+  font-weight: 800;
+  letter-spacing: 4px;
+  text-align: center;
+}
+.asesores{
+  width: 80%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 20px;
+  margin-bottom: 60px;
+}
+.encargado{
+  width: 32%;
+  min-width: 220px;
+  margin-bottom: 20px;
+}
+.encargado .foto{
+  width:90%;
+  margin:auto;
+  min-width: 200px;
+}
+.asesores h3{
+  font-family: 'Cookie', sans-serif;
+  font-size:32px;
+  text-align: center;
+}
+.asesores p{
+  text-align: center;
+  margin-bottom: 25px;
+}
+.asesores a{
+  text-decoration: none;
+  padding: 10px 20px;
+  margin-left: 30%;
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 700;
+  background: #fff;
+  border: 1px solid  rgba(201, 123, 78, 0.945);
+  color:  rgba(201, 123, 78, 0.945);
+  cursor: pointer;
+}
+.asesores a:hover{
+  background: rgba(201, 123, 78, 0.945);
+  color: #fff;
+}
 @media only screen and (max-width:900px){
   .integrantes h3, .integrantes h4, p{
     text-align: center;
+  }
+  .asesores{
+    justify-content: space-around;
   }
 }
 @media only screen and (max-width:650px){
@@ -76,5 +129,8 @@ body{
   }
   .integrantes p{
     font-size:14px;
+  }
+  .only{
+    font-size:16px;
   }
 }
