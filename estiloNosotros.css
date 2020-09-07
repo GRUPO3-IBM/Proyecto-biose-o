@@ -107,7 +107,7 @@ body{
   color: #fff;
 }
 @media only screen and (max-width:900px){
-  .integrantes h3, .integrantes h4, p{
+  .integrantes h3, .integrantes h4, .integrantes p{
     text-align: center;
   }
   .asesores{
@@ -115,7 +115,7 @@ body{
   }
 }
 @media only screen and (max-width:650px){
-  .description{
+  .person .description{
     width: 80%;
     min-width: 200px;
   }
