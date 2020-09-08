@@ -11,11 +11,12 @@ body{
   margin: auto;
   min-height: 550px;
   margin-top: 100px;
-  margin-bottom:50px;
-  font-family: 'Nunito Sans', sans-serif;
+  font-family: 'Raleway', sans-serif;
 }
 .content h1{
-  font-size:40px;
+  font-size:30px;
+  font-weight: 800;
+  letter-spacing: 4px;
   margin-bottom: 20px;
 }
 .content p{
