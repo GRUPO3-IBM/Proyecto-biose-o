@@ -110,36 +110,56 @@ body{
 }
 /*----cuerpo-----*/
 article{
-  font-family: 'Nunito Sans', sans-serif;
-  width: 80%;
-  height: 350px;
-  margin:auto;
-  margin-bottom:50px;
+  font-family: 'Raleway', sans-serif;
+  width: 70%;
+  margin: 10px auto 100px auto;
+  min-height: 350px;
 } 
 article h1{
-  font-size: 35px;
+  font-size: 30px;
+  font-weight: 600;
+  letter-spacing: 2px;
   padding: 15px 0px;
+  margin-top: 20px;
+  font-family: 'Raleway', sans-serif;
+}
+article h4{
+  font-family: 'Raleway', sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  text-align: right;
+  margin-top: 20px;
 }
 article p{
-  font-size:25px;
+  font-size:24px;
+  text-align: justify;
 }
 .parte1{
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
-  margin: auto;
-  align-items: top;
+  margin: 20px auto 0px auto;
+  justify-content: space-between;
 }
-.parte1 .texto{
-  width:70%;
-  min-width:400px;
-}
-.parte1 .multimedia{
+.cuadro{
   width:30%;
-  min-width: 200px;
+  padding: 25px 5px;
+  text-align: center;
+  min-width: 120px;
+  margin-bottom: 10px;
+  transition: all ease 350ms;
 }
-article img{
-  width: 100%;
-  margin:30px;
+.cuadro p{
+  text-align: center;
+}
+.b1{
+  background: #d8ac83;
+}
+.b2{
+  background: #fdeaab;
+}
+.b3{
+  background: #dbcd9f;
 }
 @media only screen and (max-width: 700px){
   article h1{
@@ -147,5 +167,16 @@ article img{
   }
   article p{
     font-size:15px;
+  }
+  article h2{
+    font-size: 15px;
+  }
+}
+@media only screen and (max-width: 500px){
+  .parte1{
+    justify-content: space-around;
+  }
+  .cuadro{
+    width:80%;
   }
 }
