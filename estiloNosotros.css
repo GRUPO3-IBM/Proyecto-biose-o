@@ -14,19 +14,19 @@ body{
   transition: all ease 0.3s;
 } 
 .integrantes h3{
-  font-family: 'Cookie', sans-serif;
-  font-size:35px;
+  font-family: 'Satisfy', sans-serif;
+  font-size:32px;
   font-weight: 600;
   color: #400A00;
 }
 .integrantes h4{
-  font-family: 'Nunito Sans', sans-serif;
+  font-family: 'Raleway', sans-serif;
   font-size:20px;
   color: #400A00;
   padding-bottom: 20px;
 }
 .integrantes p, .asesores p{
-  font-family: 'Nunito Sans', sans-serif;
+  font-family: 'Raleway', sans-serif;
   font-size:18px;
 }
 .person{
@@ -57,7 +57,7 @@ body{
   padding-top: 10px;
 }
 .only{
-  font-family: 'Nunito Sans', sans-serif;
+  font-family: 'Raleway', sans-serif;
   font-size:25px;
   font-weight: 800;
   letter-spacing: 4px;
@@ -83,8 +83,8 @@ body{
   min-width: 200px;
 }
 .asesores h3{
-  font-family: 'Cookie', sans-serif;
-  font-size:32px;
+  font-family: 'Satisfy', sans-serif;
+  font-size:30px;
   text-align: center;
 }
 .asesores p{
@@ -95,7 +95,7 @@ body{
   text-decoration: none;
   padding: 10px 20px;
   margin-left: 30%;
-  font-family: "Nunito Sans", sans-serif;
+  font-family: "Raleway", sans-serif;
   font-weight: 700;
   background: #fff;
   border: 1px solid  rgba(201, 123, 78, 0.945);
