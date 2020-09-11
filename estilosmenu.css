@@ -12,6 +12,25 @@ body::-webkit-scrollbar-thumb{
 	border-radius: 5px;
 	border-left: 2px solid #fff;
 }
+.loader{
+  width: 100%;
+  height: 100%;
+  background: #fdeaab;
+  position: fixed;
+  top:0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 99999999;
+}
+.loader i{
+  color: #000;
+  position: fixed;
+}
+.fa-5x{
+  top:50%;
+  left: 50%;
+}
 header{
   background: #fdeaab;
   border-bottom: 2px solid rgba(0,0,0,.5);
@@ -23,7 +42,7 @@ header{
 .all{
     background: #fdeaab;
     width: 90%;
-    height: 70px;
+    height: 90px;
 	  max-width: 1200px;
 	  margin:auto;
 	  display: flex;
@@ -38,7 +57,7 @@ header{
 }
 .all .logo img{
   vertical-align: top;
-	height: 70px;
+	height: 90px;
 }
 .all .enlaces{
 	display: inline-block;
@@ -135,7 +154,7 @@ header{
     opacity: 0;
   }
   .enlaces i{
-    color: black;
+    color: #000;
     visibility: visible;
     cursor:pointer;
     transform: translateX(400px);

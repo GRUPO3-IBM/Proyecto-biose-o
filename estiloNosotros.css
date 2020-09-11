@@ -9,7 +9,7 @@ body{
 .integrantes{
   width: 80%;
   margin:auto;
-  margin-top: 110px;
+  margin-top: 160px;
   margin-bottom: 60px;
   transition: all ease 0.3s;
 } 
@@ -28,6 +28,7 @@ body{
 .integrantes p, .asesores p{
   font-family: 'Raleway', sans-serif;
   font-size:18px;
+  text-align: justify;
 }
 .person{
   display: flex;
@@ -41,7 +42,14 @@ body{
 .person img, .asesores img{
   width: 100%;
   border-radius: 50%;
-  padding:10px;
+  margin:10px;
+}
+.person img{
+  border: 2px solid #fff;
+}
+.asesores img{
+  border: 1px solid rgba(201, 123, 78, 0.945);
+  padding: 5px;
 }
 .person .foto{
   width: 30%;
@@ -53,8 +61,7 @@ body{
   min-width: 500px;
   align-items: center;
   margin: auto;
-  padding-bottom: 15px;
-  padding-top: 10px;
+  padding: 10px 0px 15px 0px;
 }
 .only{
   font-family: 'Raleway', sans-serif;
@@ -63,6 +70,7 @@ body{
   letter-spacing: 4px;
   text-align: center;
 }
+
 .asesores{
   width: 80%;
   margin: auto;
