@@ -130,6 +130,11 @@ article h4{
   text-align: right;
   margin-top: 20px;
 }
+.biblio{
+  text-decoration: none;
+  font-weight: 500;
+  color: #000;
+}
 article p{
   font-size:24px;
   text-align: justify;
