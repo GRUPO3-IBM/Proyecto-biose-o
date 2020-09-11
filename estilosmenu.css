@@ -135,7 +135,7 @@ header{
     opacity: 0;
   }
   .enlaces i{
-    color: white;
+    color: black;
     visibility: visible;
     cursor:pointer;
     transform: translateX(400px);
