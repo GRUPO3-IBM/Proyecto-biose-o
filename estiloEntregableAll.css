@@ -50,7 +50,54 @@ a{
   text-decoration: none;
   font-family: 'Nunito Sans', sans-serif;
 }
-
+.subtitulo{
+  margin: 20px 0px 25px 0px;
+}
+.equipo h3{
+  font-family: 'Satisfy', sans-serif;
+  font-size:32px;
+  font-weight: 600;
+  color: #400A00;
+}
+.equipo h4{
+  font-family: "Raleway", sans-serif;
+  font-size:20px;
+  color: #400A00;
+  padding-bottom: 20px;
+}
+.person{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: auto;
+  margin: 30px 0px 50px 0px;
+  background: rgba(247, 221, 149, 0.959);
+}
+.person img{
+  width: 100%;
+  border-radius: 50%;
+  margin:10px;
+}
+.person img{
+  border: 2px solid #fff;
+}
+.asesores img{
+  border: 1px solid rgba(201, 123, 78, 0.945);
+  padding: 5px;
+}
+.person .foto{
+  width: 30%;
+  margin:auto;
+  min-width: 200px;
+}
+.person .description{
+  width: 60%;
+  min-width: 500px;
+  align-items: center;
+  margin: auto;
+  padding: 10px 0px 15px 0px;
+}
 .botones{
   display: flex;
   flex-wrap: wrap;
