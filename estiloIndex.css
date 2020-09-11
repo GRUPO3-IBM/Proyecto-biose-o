@@ -124,16 +124,17 @@ article h1{
   font-family: 'Raleway', sans-serif;
 }
 article h4{
+  color: #000;
   font-family: 'Raleway', sans-serif;
   font-size: 16px;
   font-weight: 300;
-  text-align: right;
+  text-align: justify;
   margin-top: 20px;
 }
 .biblio{
+  color: #000;
   text-decoration: none;
   font-weight: 500;
-  color: #000;
 }
 article p{
   font-size:24px;
