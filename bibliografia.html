@@ -12,6 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Cookie&family=Dancing+Script:wght@400;500;600;700&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <script src="jquery-3.4.1.min.js" type="text/javascript"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
     <script>
     $(document).ready(function(){
       $("#abrir").mouseover(function(){
@@ -49,6 +50,16 @@
     <a href="entregables.html" class="item" id="entregables">ENTREGABLES</a>
     <a href="bibliografia.html" class="item" id="bibliografia">BIBLIOGRAFÍA</a>
 </div>
+
+<div class="loader">
+	<i class="fas fa-cog fa-spin fa-5x"></i>
+  </div>
+  <script type="text/javascript">
+	$(window).load(function() {
+		$(".loader").fadeOut("slow");
+	});
+  </script>
+
 <article class="content">
   <h1>BIBLIOGRAFÍA</h1>
   <div class="cita">

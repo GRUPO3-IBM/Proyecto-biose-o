@@ -1,0 +1,148 @@
+body{
+    box-sizing: border-box;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+/*----cuerpo-----*/
+.content{
+  width: 70%;
+  margin: auto;
+  min-height: 550px;
+  margin-top: 140px;
+}
+.content h1{
+  font-family: 'Nunito Sans', sans-serif;
+  font-size:18px;
+  font-weight: 500;
+  text-align: center;
+}
+.content h2{
+  font-family: 'Raleway', sans-serif;
+  font-size: 25px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.content h3{
+  font-family: 'Raleway', sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  margin: 20px 0px 10px 0px;
+}
+.content p{
+  font-family: 'Raleway', sans-serif;
+  font-size: 20px;
+  text-align: justify;
+}
+.content i{
+  margin-right: 10px;
+  color: rgb(175, 101, 67);
+}
+.content img{
+  width: 70%;
+  margin: 10px 0px 20px 0px;
+  border: 1px solid #d1d1d1;
+}
+a{
+  color: #000;
+  text-decoration: none;
+  font-family: 'Nunito Sans', sans-serif;
+}
+.subtitulo{
+  margin: 20px 0px 25px 0px;
+}
+.equipo h3{
+  font-family: 'Satisfy', sans-serif;
+  font-size:32px;
+  font-weight: 600;
+  color: #400A00;
+}
+.equipo h4{
+  font-family: "Raleway", sans-serif;
+  font-size:20px;
+  color: #400A00;
+  padding-bottom: 20px;
+}
+.person{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: auto;
+  margin: 30px 0px 50px 0px;
+  background: rgba(247, 221, 149, 0.959);
+}
+.person img{
+  width: 100%;
+  border-radius: 50%;
+  margin:10px;
+}
+.person img{
+  border: 2px solid #fff;
+}
+.asesores img{
+  border: 1px solid rgba(201, 123, 78, 0.945);
+  padding: 5px;
+}
+.person .foto{
+  width: 30%;
+  margin:auto;
+  min-width: 200px;
+}
+.person .description{
+  width: 60%;
+  min-width: 500px;
+  align-items: center;
+  margin: auto;
+  padding: 10px 0px 15px 0px;
+}
+.botones{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.botones a{
+  padding: 10px 20px;
+  margin:10px 0px;
+  min-width: 200px;
+  background: #fff;
+  border: 1px solid  rgba(201, 123, 78, 0.945);
+  color:  rgba(201, 123, 78, 0.945);
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: 800;
+}
+.botones a:hover{
+  color: #fff;
+  background: rgba(201, 123, 78, 0.945);
+}
+.final{
+  margin-bottom:50px;
+}
+@media only screen and (max-width:900px){
+  .equipo h3, .equipo h4{
+    text-align: center;
+  }
+}
+@media only screen and (max-width:650px){
+  .person .description{
+    width: 80%;
+    min-width: 200px;
+  }
+}
+@media only screen and (max-width: 600px){
+  .content h1{
+    font-size:20px;
+  }
+  .content p{
+    font-size: 15px;
+  }
+  .equipo h3{
+    font-size:25px;
+  }
+  .equipo h4{
+    font-size:14px;
+  }
+}
