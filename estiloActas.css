@@ -1,0 +1,92 @@
+body{
+    box-sizing: border-box;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+/*----cuerpo-----*/
+.content{
+  width: 80%;
+  margin: auto;
+  min-height: 550px;
+  margin-top: 140px;
+}
+.content h1{
+  font-family: 'Raleway', sans-serif;
+  font-weight: 600;
+  font-size: 30px;
+  letter-spacing: 4px;
+  text-align: center;
+}
+.actas{
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+  margin-top: 30px;
+  margin-bottom: 50px;
+  justify-content: space-between;
+}
+.cajas{
+  background: rgb(255, 226, 97);
+  width:200px;
+  height:150px;
+  margin: 15px;
+  cursor: pointer;
+  transition: all ease 350ms;
+}
+.fecha{
+  font-family: 'Satisfy', sans-serif;
+  font-size: 40px;
+  text-align: center;
+  position: relative;
+  top: 8px;
+}
+.mes{
+  font-family: 'Satisfy', sans-serif;
+  font-size: 30px;
+  text-align: center;
+  position: relative;
+  top: -8px;
+}
+.doc{
+  color:rgb(68, 12, 12);
+  font-weight: 500;
+  background: white;
+  text-align: center;
+  padding: 5px 25px;
+  border-radius: 25px;
+  margin-left: 20px;
+}
+.botones{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+a{
+  text-decoration: none;
+  font-family: 'Nunito Sans', sans-serif;
+}
+.botones a{
+  padding: 10px 20px;
+  margin:10px 0px;
+  min-width: 200px;
+  background: #fff;
+  border: 1px solid  rgba(201, 123, 78, 0.945);
+  color:  rgba(201, 123, 78, 0.945);
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: 800;
+}
+.botones a:hover{
+  color: #fff;
+  background: rgba(201, 123, 78, 0.945);
+}
+.cajas:hover{
+  background: white;
+  border: 2px solid  rgb(255, 226, 97);
+  transform: translateY(10px);
+}
+.cajas:hover .doc{
+  background:  rgb(255, 226, 97);
+}
