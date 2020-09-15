@@ -62,7 +62,7 @@ body{
 }
 
 .active, .dot:hover {
-  background-color: #ffc982;
+  background-color: rgb(26, 25, 25);
 }
 
 /* Fading animation */
@@ -123,6 +123,12 @@ article h1{
   padding: 15px 0px;
   margin-top: 20px;
   font-family: 'Raleway', sans-serif;
+  transition: all ease 350ms;
+}
+article h3{
+  font-family: "Satisfy", sans-serif;
+  font-size: 30px;
+  margin-bottom: 7px;
 }
 article h4{
   color: #000;
@@ -140,6 +146,10 @@ article p{
   font-size:24px;
   text-align: justify;
 }
+.datos{
+  margin: 0px 0px 25px 0px;
+}
+
 .parte1{
   width: 100%;
   display: flex;
