@@ -20,7 +20,19 @@
         $("#abrir").click(function(){
           $(".navegador").toggle("1500ms");
         });
-         
+        $("ul.tabs li a:first").addClass("activo");
+        $(".secciones article").hide("1500ms");
+        $(".secciones article#tab1").show("1500ms");
+
+        $("ul.tabs li a").click(function(){
+          $("ul.tabs li a").removeClass("activo");
+          $(this).addClass("activo");
+          $(".secciones article").hide("1500ms");
+
+          var activeTab = $(this).attr("href");
+          $(activeTab).show("1500ms");
+          return false;
+       });
       });
       </script>
 		<title>PROYECTO IBM</title>
@@ -64,13 +76,13 @@
     <div class="slideshow-container">
 			
       <div class="Slides-transition">
-       <img src="Diapo1.png">
+       <img src="Diapo01.png">
       </div>
       <div class="Slides-transition">
-      <img src="Diapo2.png">
+      <img src="Diapo02.png">
       </div>
       <div class="Slides-transition">
-       <img src="Diapo3.png">
+       <img src="Diapo03.png">
       </div>
 
       <a class="prev" onclick="plusSlides(-1)">&#10096;</a>
@@ -111,14 +123,111 @@
 		}
 		</script>
 
+<div class="caso">
+  <div class="wrap1">
+    <div class="allTabs">
+      <h1 class="tittle">CASO CLÍNICO</h1>
+      <ul class="tabs">
+        <li><a href="#tab1" id="uno"><span class="tab-text">Datos Personales</span></a></li>
+        <li><a href="#tab2" id="dos"><span class="tab-text">Antecedentes</span></a></li>
+        <li><a href="#tab3" id="tres"><span class="tab-text">Enfermedad actual</span></a></li>
+        <li><a href="#tab4" id="cuatro"><span class="tab-text">Examen clínico</span></a></li>
+        <li><a href="#tab5" id="cinco"><span class="tab-text">Diagnóstico</span></a></li>
+        <li><a href="#tab5" id="cinco"><span class="tab-text">Tratamiento</span></a></li>
+        <li><a href="#tab5" id="cinco"><span class="tab-text">Evolución</span></a></li>
+        <li><a href="#tab5" id="cinco"><span class="tab-text">Epicrisis</span></a></li>
+      </ul>
+    </div>
+    <div class="secciones">
+      <article id="tab1">
+
+          <div class="datos">
+            <h3>Datos personales</h3>
+            <p><b>Paciente:</b> NN</p>
+            <p><b>Estado civil:</b> --</p>  
+            <p><b>Natural:</b> Lima</p>  
+            <p><b>Procedente:</b> Lima</p>
+            <p><b>Ocupación:</b> -- </p>
+        </div>  
+
+      </article>
+      <article id="tab2">
+
+          <h3>Antecedentes</h3>
+          <p><b>Personales:</b> mujer, producto de primera gestación, nacido por parto vaginal, 
+            APGAR 6 al minuto 1 y 8 al minuto 5, líquido amniótico 
+            claro. En el hospital corroboraron que no estuvo en contacto con alguna
+            persona con COVID-19. 
+          </p><br>
+          <p><b>Familiares:</b> Maternos: edad = 18 años, primera gestación, no planificada, 
+            con un control prenatal una semana previa antes del nacimiento, acudió por 
+            presentar leve ardor al orinar, el médico le informó que podría tratarse de 
+            una infección urinaria y que necesitaría algunas pruebas de laboratorio, las
+            cuales no pudo realizarlas. El día del nacimiento, presentó dolor y contracciones uterinas, 
+            acudió al hospital cercano al domicilio, en el cual ocurre el parto vaginal a las pocas 
+            horas de haber llegado. 
+          </p>
+
+      </article>
+      <article id="tab3">  
+
+            <h3>Enfermedad actual</h3>
+            <p><b>Tiempo de enfermedad:</b> Inmediatamente al nacimiento</p>
+            <p><b>Inicio:</b> Insidioso</p>  
+            <p><b>Curso:</b> Progresivo</p>  
+            <p><b>Procedente:</b> Lima</p>
+            <p><b>Ocupación:</b> -- </p><br>  
+
+            <p><b>Relato:</b></p>
+            <p>Recién nacido pretérmino, 33 semanas de edad gestacional, con peso adecuado a edad gestacional.  
+              Inmediatamente al nacimiento presenta dificultad respiratoria de incremento progresivo, necesitando 
+              la administración de oxígeno suplementario mediante cánula nasal. </p>
+      </article>
+      <article id="tab4">
+
+        <h3>Exámen clínico</h3>
+        <p>T°=36.8°C, frecuencia respiratoria= 50x, frecuencia cardiaca= 140x, saturación de O2= 90%, 
+          presión arterial = 68(sistólica)/40 (diastólica) mm Hg. Con cánula nasal para administración de
+           oxígeno suplementario, con una fracción inspiratoria de oxígeno=0.4. Llenado capilar < 3 segundos. 
+          Quejido espiratorio constante, retracción moderada de músculos intercostales, retracción xifoidea moderada, 
+          aleteo nasal moderado, sin disbalance toraco-abdominal durante la respiración. <br><br>
+          <b>Pulmones:</b> disminución moderada del pasaje aéreo en ambos campos pulmonares. <br>
+          <b>Cardiovascular:</b> ruidos cardiacos de buena intensidad, rítmicos, no soplos. Pulsos periféricos presentes, sin anormalidades. <br>
+          <b>Abdomen:</b> globuloso, muñón umbilical con dos arterias y una vena, ruidos intestinales presentes, sin hepatomegalia ni esplenomegalia. <br>
+          <b>Genitales:</b> características femeninas, normales. Musculoesquelético: extremidades simétricas, segmentos corporales proporcionales a su edad gestacional. <br>
+          <b>Neurológico:</b> fontanela anterior normotensa, reflejos presentes, tono muscular disminuido, levemente. 
+          </p><br><br>
+          <p><b>Exámenes auxiliares</b></p>
+          <p>Radiografía simple de tórax (previa a la administración de surfactante pulmonar): mostró imágenes radiopacas 
+          con apariencia de vidrio esmerilado en ambos campos pulmonares. Radiografía simple de tórax (posterior a la 
+          administración de surfactante pulmonar): disminución marcada de las imágenes radiopacas.</p>
+      </article>
+      <article id="tab5">
+
+        <p><b>Diagnóstico</b></p>
+        <p>Síndrome de Dificultad Respiratoria del recién nacido por deficiencia de surfactante </p><br>
+
+        <p><b>Tratamiento</b></p>
+        <p>Administración de surfactante pulmonar.<br>
+          Oxígeno suplementario. <br>
+          Líquidos y electrolitos endovenosos <br>
+          Cuidados apropiados a neonato pretérmino en la unidad de cuidados intensivos.</p><br>
+
+        <p><b>Evolución</b></p>
+        <p>El niño evolucionó favorablemente con la administración de surfactante pulmonar, disminuyendo la necesidad de oxígeno suplementario
+           y el uso de ventilación mecánica.</p><br>
+
+        <p><b>Epicrisis</b></p>
+        <p>El médico concluyó que su hipótesis fue correcta y que se trata de uno de los casos que frecuentemente se presentan, preguntándose a la vez si hubiera habido
+           alguna manera de saber con anticipación que el niño nacería antes de término</p>
+
+      </article>
+    
+    </div>
+  </div>
+</div>
+
 <article class="contenido">
-      <h1>CASO CLÍNICO</h1>
-      <h3>Datos personales</h3>
-      <p><b>Paciente:</b> NN</p>
-      <p><b>Estado civil:</b> --</p>  
-      <p><b>Natural:</b> Lima</p>  
-      <p><b>Procedente:</b> Lima</p>
-      <p><b>Ocupación:</b> -- </p>      
 
       <h1>RECIÉN NACIDOS PREMATUROS</h1>
       <p>Se considera prematuro a un bebé nacido vivo antes de que 
