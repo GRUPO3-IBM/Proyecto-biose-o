@@ -109,6 +109,75 @@ body{
   background-color: #FFA484;
 	color: #FFF;
 }
+/*-----caso clinico----*/
+.caso{
+  width: 80%;
+  margin: 30px auto 0px auto;
+  font-family: 'Raleway',sans-serif;
+}
+.caso a{
+  text-decoration: none;
+  color: #000;
+}
+.caso ul{
+  list-style: none;
+}
+.tittle{
+  text-align: center;
+  margin: 8px 0px 32px 0px;
+}
+.wrap1{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  margin: auto;
+  justify-content: space-between;
+}
+.allTabs{
+  width: 30%;
+  min-width: 240px;
+}
+ul.tabs{
+  width: 100%;
+  height: 100%;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+}
+.tabs li{
+  margin: 12px 0px;
+}
+.tabs a{
+  padding: 10px 60px 10px 10px;
+  
+}
+.tabs a:hover{
+  border-left: 8px solid rgba(255, 226, 131, 6);
+  font-weight: 700;
+}
+.secciones{
+  width: 70%;
+  min-width: 300px;
+  border-left: 1px solid #d1d1d1;
+  background: rgba(255, 226, 131, 1);
+}
+.secciones article{
+  text-align: center;
+  width: 90%;
+  margin: 20px auto 20px auto;
+}
+.activo{
+  border-left: 8px solid rgba(255, 226, 131, 1);
+  font-weight: 700;
+}
+.tab-text{
+  font-size: 18px;
+}
+.tab-text i{
+  margin-right: 8px;
+  color: #000;
+}
+
 /*----cuerpo-----*/
 article{
   font-family: 'Raleway', sans-serif;
@@ -117,7 +186,7 @@ article{
   min-height: 350px;
 } 
 article h1{
-  font-size: 30px;
+  font-size: 28px;
   font-weight: 600;
   letter-spacing: 2px;
   padding: 15px 0px;
@@ -127,7 +196,7 @@ article h1{
 }
 article h3{
   font-family: "Satisfy", sans-serif;
-  font-size: 30px;
+  font-size: 28px;
   margin-bottom: 7px;
 }
 article h4{
@@ -143,13 +212,9 @@ article h4{
   text-decoration: none;
 }
 article p{
-  font-size:24px;
+  font-size:20px;
   text-align: justify;
 }
-.datos{
-  margin: 0px 0px 25px 0px;
-}
-
 .parte1{
   width: 100%;
   display: flex;
@@ -189,6 +254,20 @@ article p{
   }
   article h4{
     font-size: 12px;
+  }
+}
+@media only screen and (max-width: 600px){
+  .wrap1{
+    flex-wrap: wrap;
+  }
+  .allTabs{
+    margin:auto;
+    padding-bottom: 10px;
+    width: 60%;
+  }
+  .secciones{
+    margin: auto;
+    width: 80%;
   }
 }
 @media only screen and (max-width: 500px){
