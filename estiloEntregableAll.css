@@ -128,6 +128,7 @@ a{
 .final{
   margin-bottom:50px;
 }
+
 .mapa{
   width: 100%;
   height: 815px;
@@ -150,7 +151,36 @@ a{
 	border-radius: 10px;
 	border-left: 2px solid #fff;
 }
-
+.cuadros{
+  width: 90%;
+  margin: auto;
+}
+.cuadros img{
+  width: 100%;
+  border: none;
+}
+.dibujos{
+  display: flex;
+  flex-wrap: wrap;
+  margin:auto;
+  justify-content: space-between;
+}
+.dibujos img{
+  width: 30%;  
+  border:none;
+  transition: all ease 350ms;
+}
+.primero:hover, .segundo:hover , .tercero:hover{
+  transform: translateY(-10px);
+}
+.nacional img{
+  width: 100%;
+  border: none;
+}
+.tabla1,.tabla2, .tabla3{
+  width: 70%;
+  margin: auto;
+}
 @media only screen and (max-width:900px){
   .equipo h3, .equipo h4{
     text-align: center;
@@ -174,5 +204,8 @@ a{
   }
   .equipo h4{
     font-size:14px;
+  }
+  .tabla1,.tabla2, .tabla3{
+    width: 100%;
   }
 }
