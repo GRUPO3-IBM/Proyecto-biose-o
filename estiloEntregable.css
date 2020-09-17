@@ -62,7 +62,7 @@ a{
   transition: all 300ms;
 }
 
-.box:hover{        /*abajo, izquierda*/
+.box:hover{     
   transform: translate(5px, -5px);
   box-shadow: -10px 10px 20px -10px rgba(0,0,0,0.5);
 }
@@ -113,10 +113,10 @@ a{
 .box .background-hover{
   width: 100px;
   height: 100px;
-  background: red;
+  background: #ffdd9d;
   position: absolute;
-  top: 250px;
-  left: -100px;
+  top: 200px;
+  left: -150px;
   border-radius: 100%;
   transition: all 300ms;
   background: linear-gradient(to bottom, rgba(255, 115, 0), rgba(255, 148,48));
@@ -137,18 +137,12 @@ a{
   left: -250px;
 }
 .box3 .background-hover{
-  background: linear-gradient(to bottom, rgba(141, 255, 101), rgba(2, 166, 109));
+  background: linear-gradient(to bottom, rgba(3, 0, 57), rgba(31, 37, 255));
   top: -170px;
   left: 500px;
 }
-.box4 .background-hover{
-  background: linear-gradient(to bottom, rgba(51, 255, 189), rgba(51, 255, 87));
+.box4 .background-hover{/*252, 0, 242*/
+  background: linear-gradient(to bottom, rgba(21, 0, 57), rgba(252, 0, 242));
   top: 170px;
   left: 500px;
-}
-.box5 .background-hover{
-  background: linear-gradient(to bottom, rgba(3, 0, 57), rgba(31, 37, 255));
-}
-.box6 .background-hover{/*252, 0, 242*/
-  background: linear-gradient(to bottom, rgba(21, 0, 57), rgba(252, 0, 242));
 }
