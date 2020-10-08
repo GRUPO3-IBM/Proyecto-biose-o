@@ -378,6 +378,9 @@ a{
   border-radius: 0px 0px 20px 0px;
   min-width: 165px;
   transition: all ease 350ms;
+}
+.entrada .entrada_item{
+  width: 40%;
 }   
 .salida .entrada_item{
   background: #c1e3ff;
