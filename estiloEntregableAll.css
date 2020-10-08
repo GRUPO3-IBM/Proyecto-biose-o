@@ -234,7 +234,7 @@ a{
 .b3{
   background: #dbcd9f;
 }
-.cuadro:hover{
+.cuadro:hover, .entrada_item:hover{
   transform: translateY(-15px);
   box-shadow: -10px 10px 20px -10px rgba(0,0,0,0.5);
 }
@@ -264,7 +264,152 @@ a{
 #Lienzo{
   width: 100%;
   border: none;
+  align-items: center;
 }
+.video{
+  width: 100%;
+  height: 100%;
+  position: relative;
+  margin: 20px auto 40px auto;
+  max-width: 860px;
+  max-height: 615px;
+}
+.video-poster{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: rgba(255,255,255,.96); 
+  border: 2px solid #d8ac83;
+  z-index: 100;
+  cursor: pointer;
+}
+.video-poster i, .video-poster button{
+   position: relative;
+   top: calc(50% - 30px);
+   left: calc(50% - 30px);
+   border: none;
+   background: none;
+   cursor: pointer;
+}
+.definicion{
+  width: 100%;
+  display: flex;
+  margin: auto;
+  justify-content: space-between;
+}
+.textoA{
+  width: 60%;
+  align-content: center;
+  background:#fdeaab;
+  padding: 4px 20px;
+  margin: auto 0px;
+  border-bottom-right-radius: 20%;
+}
+.definicion img{
+  width: 35%;
+}
+/*-------Slides style----------*/
+.slideshow-container
+{ width: 80%;
+  position: relative;
+  margin:auto;
+}
+
+.Slides-transition
+{ display: none
+}
+
+.Slides-transition img
+{ width: 100%;
+  border: none;
+}
+
+/*--------Next and previous buttons-------*/
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 8px 18px;
+  margin-top: initial;
+  color: white;
+  font-weight: bold;
+  font-size: 25px;
+  transition: 0.5s ease;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, .8);
+}
+
+/* Position button */
+.next{
+  right: -50px;
+}
+.prev{
+  left: -50px;
+}
+
+/*Hover, add background*/
+.prev:hover, .next:hover {
+  background-color:  rgba(201, 123, 78, 0.945);
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+.entrada, .salida{
+  width: 100%;
+  display: flex;
+  margin: auto;
+  justify-content: space-between;
+}
+.entrada i, .salida i{
+  margin-left: 10px;
+  color: black;
+}
+.entrada_item{
+  width: 30%;
+  text-align: center;
+  padding: 10px;
+  background: #e9d788;
+  border-radius: 0px 0px 20px 0px;
+  min-width: 165px;
+  transition: all ease 350ms;
+}   
+.salida .entrada_item{
+  background: #c1e3ff;
+}
+.entrada p, .salida p{
+  text-align: center;
+}
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.dot {font-size: 10px}
+}
+@media only screen and (max-width: 700px) {
+  .dot {height: 15px; width: 15px;}
+  .entrada, .salida{
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .entrada_item{
+    margin-bottom: 10px;
+  }
+} 
+
 @media only screen and (max-width:900px){
   .equipo h3, .equipo h4{
     text-align: center;
