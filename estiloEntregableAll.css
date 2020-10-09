@@ -294,11 +294,13 @@ a{
 .definicion{
   width: 100%;
   display: flex;
+  flex-wrap: wrap;
   margin: auto;
   justify-content: space-between;
 }
 .textoA{
   width: 60%;
+  min-width: 300px;
   align-content: center;
   background:#fdeaab;
   padding: 4px 20px;
@@ -307,6 +309,8 @@ a{
 }
 .definicion img{
   width: 35%;
+  height: 100%;
+  margin: auto 0px;
 }
 /*-------Slides style----------*/
 .slideshow-container
@@ -410,6 +414,13 @@ a{
   }
   .entrada_item{
     margin-bottom: 10px;
+  }
+  .definicion img{
+    margin-top: 14px;
+    width: 100%;
+  }
+  .definicion .textoA{
+    width: 100%;
   }
 } 
 
