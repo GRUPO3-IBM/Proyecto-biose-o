@@ -28,8 +28,6 @@
         mail($destino, "Ha recibido un nuevo mensaje" , $contenido);
 		header("Location:https://ibm2020.github.io/Slideart/nosotros.html");
 		?>
-	</body>
-	<center>
-	    <h2>Su mensaje ha sido enviado correctamente</h2>
-	</center>
+		<h2>Su mensaje ha sido enviado correctamente</h2>
+	</body>    
 </html>
