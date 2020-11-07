@@ -26,7 +26,7 @@
 		$mensaje = $_POST["mensaje"];
         $contenido ="Nombre: " .$nombre. "\nCorreo: ".$correo. "\nTeléfono: ".$telefono. "\nMensaje: ".$mensaje;
         mail($destino, "Ha recibido un nuevo mensaje" , $contenido);
-		header("Location:index.html");
+		header("Location:https://ibm2020.github.io/Slideart/nosotros.html");
 		?>
 	</body>
 	<center>
