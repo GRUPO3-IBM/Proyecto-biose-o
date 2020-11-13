@@ -409,6 +409,9 @@ a{
   margin: auto;
   justify-content: space-between;
 }
+.imagenes-simulacion .images{
+  width: 45%;
+}
 .imagenes-simulacion img{
   width: 100%;
 }
