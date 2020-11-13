@@ -402,6 +402,16 @@ a{
   height: 420px;
   margin:0px auto;
 }
+.imagenes-simulacion{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+  justify-content: space-between;
+}
+.imagenes-simulacion img{
+  width: 100%;
+}
 @-webkit-keyframes fade {
   from {opacity: .4} 
   to {opacity: 1}
